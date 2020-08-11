@@ -1,0 +1,17 @@
+.c-time-stamps {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 3 * 1.5rem; //we onen enkel 3 items uit onze ul
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  list-style: none;
+
+  overflow: hidden;
+
+  .c-time-stamp {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem; // -> dit wordt de hoogte
+  }
+}

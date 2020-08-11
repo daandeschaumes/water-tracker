@@ -1,0 +1,19 @@
+.c-app {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  max-width: $container-width;
+  min-width: $container-width;
+
+  box-sizing: border-box;
+  margin-bottom: 5rem;
+  padding: 2rem;
+  color: map-get($map: $neutral-colors, $key: light);
+  background: $alpha-color-dark;
+  background: linear-gradient(to bottom, $alpha-color-dark 0%, #002949 100%);
+  border-radius: 6px;
+
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}

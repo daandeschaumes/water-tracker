@@ -1,0 +1,11 @@
+html,
+body {
+	font: #{$font-size}/#{$line-height} $font-stack;
+	background: map-get($neutral-colors, light);
+	-webkit-font-smoothing: antialiased;
+}
+
+::selection {
+	background: $alpha-color;
+	color: map-get($neutral-colors, light);
+}

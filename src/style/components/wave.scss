@@ -1,0 +1,32 @@
+.c-wave-holder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background: $alpha-color;
+
+  will-change: transform;
+  transition: 1600ms ease-in-out transform; //  1000ms/60fps = 16ms = perfecte 60fps
+  transform: translateY(100%);
+}
+.c-wave {
+  position: absolute;
+  width: 200%;
+  bottom: 100%;
+}
+.c-wave--back {
+  right: 0;
+  fill: darken($color: $alpha-color, $amount: 45%);
+
+  animation: 1.6s wave-back linear infinite;
+}
+
+.c-wave--front {
+  left: 0;
+  margin-bottom: -1px;
+  fill: $alpha-color;
+
+  animation: 0.9s wave-front linear infinite;
+}
